@@ -1,0 +1,18 @@
+[0;1;31m×[0m shadowsocks-libev.service - Shadowsocks-libev Default Server Service
+     Loaded: loaded (]8;;file://jay-debug/usr/lib/systemd/system/shadowsocks-libev.service/usr/lib/systemd/system/shadowsocks-libev.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Thu 2025-06-19 16:32:07 CST; 11s ago
+   Duration: 14ms
+       Docs: ]8;;man:shadowsocks-libev(8)man:shadowsocks-libev(8)]8;;
+    Process: 7512 ExecStart=/usr/bin/ss-server -c $CONFFILE $DAEMON_ARGS [0;1;31m(code=exited, status=255/EXCEPTION)[0m
+   Main PID: 7512 (code=exited, status=255/EXCEPTION)
+        CPU: 14ms
+
+6月 19 16:32:07 jay-debug systemd[1]: Started shadowsocks-libev.service - Shadowsocks-libev Default Server Service.
+6月 19 16:32:07 jay-debug ss-server[7512]:  2025-06-19 16:32:07 INFO: binding to outbound IPv4 addr: 10.3.70.33
+6月 19 16:32:07 jay-debug ss-server[7512]:  2025-06-19 16:32:07 INFO: initializing ciphers... aes-256-cfb
+6月 19 16:32:07 jay-debug ss-server[7512]:  2025-06-19 16:32:07 INFO: Stream ciphers are insecure, therefore deprecated, and should be almost always avoided.
+6月 19 16:32:07 jay-debug ss-server[7512]:  2025-06-19 16:32:07 INFO: tcp server listening at 10.5.23.21:8389
+6月 19 16:32:07 jay-debug ss-server[7512]:  2025-06-19 16:32:07 ERROR: bind: Cannot assign requested address
+6月 19 16:32:07 jay-debug ss-server[7512]:  2025-06-19 16:32:07 ERROR: failed to bind address
+6月 19 16:32:07 jay-debug systemd[1]: [0;1;39m[0;1;31m[0;1;39mshadowsocks-libev.service: Main process exited, code=exited, status=255/EXCEPTION[0m
+6月 19 16:32:07 jay-debug systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mshadowsocks-libev.service: Failed with result 'exit-code'.[0m
