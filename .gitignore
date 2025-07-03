@@ -57,7 +57,7 @@ pip-delete-this-directory.txt
 *.onnx
 *.pth
 *.tf_record
-
+*.tfrecord
 # folder
 ./YOLOX_outputs
 ./dataset
